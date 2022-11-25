@@ -43,7 +43,7 @@ export function App() {
     setTodos(newTodos);
   };
 
-  const howTaks = todos.filter((todo) => !todo.completed).length;
+  const howTask = todos.filter((todo) => !todo.completed).length;
 
   return (
     <>
@@ -67,10 +67,10 @@ export function App() {
         </div>
         <TodoList todos={todos} toggleTodo={toggleTodo} />
         <div className="rest-of-task">
-          {howTaks === 0
+          {howTask === 0
             ? `No tienes tareas por completar`
-            : `Tienes ${howTaks} ${
-                howTaks > 1 ? "tareas " : "tarea "
+            : `Tienes ${howTask} ${
+                howTask > 1 ? "tareas " : "tarea "
               } por completar`}
         </div>
       </div>
