@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Ubuntu:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  font-family: Roboto;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+  margin: auto;
+  width: 50%;
+}
+
+.input-task {
+  height: 30px;
+  width: 30vw;
+  border: 1px solid skyblue;
+  border-radius: 4px;
+  margin: auto;
+  transition: ease-in 0.5s;
+}
+
+.input-task:hover {
+  border: solid 1px aqua;
+  -webkit-box-shadow: -7px 7px 41px -3px rgba(0, 0, 0, 0.61);
+  -moz-box-shadow: -7px 7px 41px -3px rgba(0, 0, 0, 0.61);
+  box-shadow: -7px 7px 41px -3px rgba(0, 0, 0, 0.61);
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.button-add {
+  border: none;
+  border-radius: 10px;
+  background: teal;
+  transition: ease-in-out 0.3s;
+  width: auto;
+  height: auto;
+  color: white;
+  font-size: 15px;
+  padding: 5px;
+}
+
+.button-add:hover {
+  border: solid 1px teal;
+  border-radius: 10px;
+  cursor: pointer;
+  background: none;
+  color: black;
+  padding: 10px;
+}
+
+.button-del {
+  border: none;
+  border-radius: 10px;
+  background: red;
+  transition: ease-in-out 0.3s;
+  width: auto;
+  height: auto;
+  color: white;
+  font-size: 15px;
+  padding: 5px;
+}
+
+.button-del:hover {
+  border: solid 1px red;
+  border-radius: 10px;
+  cursor: pointer;
+  background: none;
+  color: black;
+  padding: 10px;
+}
+
+.rest-of-task {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: auto;
+}
+
+@media (max-width: 480px) {
+  .input-task {
+    width: 45vw;
+    height: 30px;
+  }
+}

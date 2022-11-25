@@ -1,0 +1,14 @@
+.task-list {
+    list-style: none;
+    font-size: 15px;
+    font-family: Roboto;
+    margin: left;
+    line-height: 30px;
+  }
+  
+  @media (max-width: 480px) {
+    .task-list {
+      width: 80%;
+    }
+  }
+  

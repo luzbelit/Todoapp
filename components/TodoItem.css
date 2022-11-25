@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Ubuntu:wght@400;700&display=swap");
+
+.task-item {
+  display: flex;
+  align-items: center;
+  line-height: 15px;
+  margin-top: 10px;
+  border-radius: 15px;
+  background: rgb(227, 227, 227);
+  background: linear-gradient(
+    90deg,
+    rgba(227, 227, 227, 1) 0%,
+    rgba(227, 227, 227, 1) 100%
+  );
+}
+
+.task-checkbox {
+  margin-left: 15px;
+}
+
+.task-text {
+  margin-left: 5px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
